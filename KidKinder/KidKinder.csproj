@@ -121,7 +121,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Entities\About.cs" />
+    <Compile Include="Entities\AboutList.cs" />
     <Compile Include="Entities\Feature.cs" />
+    <Compile Include="Entities\Services.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
