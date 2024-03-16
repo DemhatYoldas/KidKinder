@@ -9,6 +9,7 @@ namespace KidKinder.Context
 {
     public class KidKinderContext:DbContext
     {
+        public DbSet<Admin> Admins { get; set; }
         public DbSet<About> Abouts  { get; set; }
         public DbSet<AboutList> AboutLists  { get; set; }
         public DbSet<BookASeat> BookASeats  { get; set; }

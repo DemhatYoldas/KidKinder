@@ -130,6 +130,7 @@
     <Compile Include="Context\KidKinderContext.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\AboutList.cs" />
+    <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\BookASeat.cs" />
     <Compile Include="Entities\ClassRoom.cs" />
     <Compile Include="Entities\Communication.cs" />
@@ -142,6 +143,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
