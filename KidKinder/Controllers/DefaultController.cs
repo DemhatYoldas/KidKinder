@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using KidKinder.Entities;
+using KidKinder.Context;
 
 namespace KidKinder.Controllers
 {
     public class DefaultController : Controller
     {
-        // GET: Default
+        KidKinderContext context=new KidKinderContext();
         public ActionResult Index()
         {
             return View();
@@ -26,12 +28,14 @@ namespace KidKinder.Controllers
 
         public PartialViewResult PartialHeader()
         {
-            return PartialView();
+            var values =context.Features.ToList();
+            return PartialView(values);
         }
 
         public PartialViewResult PartialFacilities()
         {
-            return PartialView();
+            var values =context.Services.ToList();
+            return PartialView(values);
         }
 
         public PartialViewResult PartialAbout()
@@ -41,7 +45,8 @@ namespace KidKinder.Controllers
 
         public PartialViewResult PartialClassRooms()
         {
-            return PartialView();
+            var values =context.ClassRooms.ToList();
+            return PartialView(values);
         }
 
         public PartialViewResult PartialBookASeat()

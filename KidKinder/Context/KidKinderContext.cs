@@ -21,5 +21,7 @@ namespace KidKinder.Context
         public DbSet<Services> Services { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+
     }
 }
