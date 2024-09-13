@@ -392,6 +392,7 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Contact\ContactHeaderPartial.cshtml" />
     <Content Include="Views\Contact\ContactAddressPartial.cshtml" />
+    <Content Include="Views\Shared\_UILayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

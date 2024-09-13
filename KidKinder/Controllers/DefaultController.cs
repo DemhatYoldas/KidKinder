@@ -40,7 +40,10 @@ namespace KidKinder.Controllers
 
         public PartialViewResult PartialAbout()
         {
-            return PartialView();
+            var degerabout=context.Abouts.ToList();
+            var degeradboutlist=context.AboutLists.ToList();
+            var model=new Tuple<List<About> , List<AboutList>>(degerabout, degeradboutlist);
+            return PartialView(model);
         }
 
         public PartialViewResult PartialClassRooms()
