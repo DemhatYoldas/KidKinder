@@ -128,8 +128,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\KidKinderContext.cs" />
-    <Compile Include="Controllers\ContactController.cs" />
-    <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\Admin\AdminLayoutController.cs" />
+    <Compile Include="Controllers\Default\AboutController.cs" />
+    <Compile Include="Controllers\Default\BookASeatController.cs" />
+    <Compile Include="Controllers\Default\ClassRoomsController.cs" />
+    <Compile Include="Controllers\Default\CommunicationController.cs" />
+    <Compile Include="Controllers\Default\ContactController.cs" />
+    <Compile Include="Controllers\Default\DefaultController.cs" />
+    <Compile Include="Controllers\Default\GalleryController.cs" />
+    <Compile Include="Controllers\Default\TeacherController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\AboutList.cs" />
     <Compile Include="Entities\Address.cs" />
@@ -393,9 +400,18 @@
     <Content Include="Views\Contact\ContactHeaderPartial.cshtml" />
     <Content Include="Views\Contact\ContactAddressPartial.cshtml" />
     <Content Include="Views\Shared\_UILayout.cshtml" />
+    <Content Include="Views\About\PartialAbout.cshtml" />
+    <Content Include="Views\About\PartialAboutList.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\AdminLayout\" />
+    <Folder Include="Views\BookASeat\" />
+    <Folder Include="Views\ClassRooms\" />
+    <Folder Include="Views\Communication\" />
+    <Folder Include="Views\Gallery\" />
+    <Folder Include="Views\Teacher\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
