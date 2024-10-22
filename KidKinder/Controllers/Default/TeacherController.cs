@@ -10,10 +10,17 @@ namespace KidKinder.Controllers.Default
 {
     public class TeacherController : Controller
     {
-        // GET: Teacher
+        KidKinderContext context = new KidKinderContext();
         public ActionResult Index()
         {
+
             return View();
         }
+
+        public PartialViewResult PartialTeacher()
+        {
+            return PartialView();
+        }
+
     }
 }

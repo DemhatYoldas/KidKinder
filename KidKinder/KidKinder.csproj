@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\KidKinderContext.cs" />
     <Compile Include="Controllers\Admin\AdminLayoutController.cs" />
+    <Compile Include="Controllers\Admin\TeacherAdminController.cs" />
     <Compile Include="Controllers\Default\AboutController.cs" />
     <Compile Include="Controllers\Default\BookASeatController.cs" />
     <Compile Include="Controllers\Default\ClassRoomsController.cs" />
@@ -396,22 +397,27 @@
     <Content Include="Views\Default\PartialBlog.cshtml" />
     <Content Include="Views\Default\PartialFooter.cshtml" />
     <Content Include="Views\Default\PartialJavaScript.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
-    <Content Include="Views\Contact\ContactHeaderPartial.cshtml" />
-    <Content Include="Views\Contact\ContactAddressPartial.cshtml" />
+    <Content Include="Views\Contact\PartialContact.cshtml" />
     <Content Include="Views\Shared\_UILayout.cshtml" />
     <Content Include="Views\About\PartialAbout.cshtml" />
     <Content Include="Views\About\PartialAboutList.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\BookASeat\Index.cshtml" />
+    <Content Include="Views\BookASeat\PartialBookASeat.cshtml" />
+    <Content Include="Views\ClassRooms\Index.cshtml" />
+    <Content Include="Views\ClassRooms\PartialViewClassRooms.cshtml" />
+    <Content Include="Views\Communication\Index.cshtml" />
+    <Content Include="Views\Communication\PartialCommunication.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
+    <Content Include="Views\Gallery\PartialGallery.cshtml" />
+    <Content Include="Views\Teacher\Index.cshtml" />
+    <Content Include="Views\Teacher\PartialTeacher.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\AdminLayout\" />
-    <Folder Include="Views\BookASeat\" />
-    <Folder Include="Views\ClassRooms\" />
-    <Folder Include="Views\Communication\" />
-    <Folder Include="Views\Gallery\" />
-    <Folder Include="Views\Teacher\" />
+    <Folder Include="Views\TeacherAdmin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

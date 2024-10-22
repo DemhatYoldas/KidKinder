@@ -10,10 +10,17 @@ namespace KidKinder.Controllers.Default
 {
     public class ClassRoomsController : Controller
     {
-        // GET: ClassRooms
+        KidKinderContext context =new KidKinderContext();
         public ActionResult Index()
         {
-            return View();
+            var values = context.ClassRooms.ToList();
+            return View(values);
         }
+
+        public PartialViewResult PartialViewClassRooms() 
+        {
+            return PartialViewClassRooms();
+        }
+
     }
 }

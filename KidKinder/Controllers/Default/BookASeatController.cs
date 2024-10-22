@@ -9,10 +9,16 @@ namespace KidKinder.Controllers.Default
 {
     public class BookASeatController : Controller
     {
-        // GET: BookASeat
+        KidKinderContext context =new KidKinderContext();
         public ActionResult Index()
         {
             return View();
         }
+
+        public PartialViewResult PartialBookASeat()
+        {
+            return PartialView();
+        }
+
     }
 }

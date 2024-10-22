@@ -10,10 +10,14 @@ namespace KidKinder.Controllers.Default
 {
     public class GalleryController : Controller
     {
-        // GET: Gallery
+        KidKinderContext context =new KidKinderContext();
         public ActionResult Index()
         {
             return View();
+        }
+        public PartialViewResult PartialGallery()
+        {
+            return PartialView();
         }
     }
 }
