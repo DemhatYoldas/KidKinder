@@ -16,10 +16,20 @@ namespace KidKinder.Controllers
         {
             return View();
         }
-        public PartialViewResult PartialContact()
+        public PartialViewResult ContactHeaderPartial()
         {
             return PartialView();
         }
-      
+
+        public PartialViewResult ContactAddressParital()
+        {
+            ViewBag.description = context.Communications.Select(x => x.Description).FirstOrDefault();
+            ViewBag.phone = context.Communications.Select(x => x.Phone).FirstOrDefault();
+            ViewBag.address = context.Communications.Select(x => x.Address).FirstOrDefault();
+            ViewBag.email = context.Communications.Select(x => x.Email).FirstOrDefault();
+
+            return PartialView();
+        }
+
     }
 }

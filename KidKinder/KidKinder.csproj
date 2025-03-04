@@ -397,7 +397,6 @@
     <Content Include="Views\Default\PartialBlog.cshtml" />
     <Content Include="Views\Default\PartialFooter.cshtml" />
     <Content Include="Views\Default\PartialJavaScript.cshtml" />
-    <Content Include="Views\Contact\PartialContact.cshtml" />
     <Content Include="Views\Shared\_UILayout.cshtml" />
     <Content Include="Views\About\PartialAbout.cshtml" />
     <Content Include="Views\About\PartialAboutList.cshtml" />
@@ -413,6 +412,8 @@
     <Content Include="Views\Gallery\PartialGallery.cshtml" />
     <Content Include="Views\Teacher\Index.cshtml" />
     <Content Include="Views\Teacher\PartialTeacher.cshtml" />
+    <Content Include="Views\Contact\ContactHeaderPartial.cshtml" />
+    <Content Include="Views\Contact\ContactAddressParital.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
