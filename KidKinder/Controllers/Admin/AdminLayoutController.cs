@@ -14,5 +14,20 @@ namespace KidKinder.Controllers.Admin
         {
             return View();
         }
+
+        public PartialViewResult PartialHead() {
+
+            return PartialView();
+        }
+
+        public PartialViewResult PartialPreLoader()
+        {
+            return PartialView();
+        }
+
+        public PartialViewResult PartialNavbar()
+        {
+            return PartialView();
+        }
     }
 }
